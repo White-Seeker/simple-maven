@@ -24,3 +24,11 @@ jobs:
 
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+
+    - name: Create Docker image
+      uses: docker/build-push-actions@v4
+      with:
+        context: .
+        file: Dockerfile
+        push: true
+        tags: applepie2/myrepo
