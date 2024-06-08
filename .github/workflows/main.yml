@@ -26,7 +26,7 @@ jobs:
       run: mvn -B package --file pom.xml
 
     - name: Docker login
-      run: docker login -u applepie2 - p helloworlD@8
+      run: docker login -u "applepie2" - p "helloworlD@8"
 
     - name: Docker Build
       run: docker build -t applepie2/myimage:latest .
