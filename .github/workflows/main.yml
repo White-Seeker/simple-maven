@@ -31,4 +31,4 @@ jobs:
         context: .
         file: Dockerfile
         push: true
-        tags: applepie2/myrepo:myimage
+        tags: applepie2/repo2:image2
