@@ -30,7 +30,7 @@ jobs:
     #   run: docker login -u "applepie2" - p "helloworlD@8"
 
     - name: Docker Login
-      uses: docker/login-action@v4
+      uses: docker/login-action@v3
       with:
         DOCKER_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKERHUB_TOKEN }}
