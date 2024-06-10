@@ -37,7 +37,7 @@ jobs:
         context: .
         file: Dockerfile
         push: true
-        tags: applepie2/repo2:image2
+        tags: applepie2/myrepo:myimage
 
     - name: Docker Build
       run: docker build -t applepie2/myimage:latest .
