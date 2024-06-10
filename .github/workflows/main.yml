@@ -25,6 +25,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
 
+    # docker login
     # - name: Docker login
     #   run: docker login -u "applepie2" - p "helloworlD@8"
       
